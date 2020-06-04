@@ -1,47 +1,38 @@
 <!DOCTYPE html>
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Error Page</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
         body {
-            font-family: 'Merriweather', serif;
-            background-color: lightgoldenrodyellow;
+          margin: 0;
+          padding: 0;
         }
-
-        .error_wrapper {
+        .container {
+      margin: 0;
+      height: calc(100vh - 20px);
+      width: calc(100vw - 20px);
+      border: 10px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        }
+        .container > .img_blocks {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
+            
+            flex-direction: row;
         }
-
-        .error_wrapper > .error_heading {
-            margin-bottom: 42px;
-
-        }
-
-        img {
-            width: 50%;
-        }
-    </style>
+    </style>    
+</head>
+<body>
+    <div class="container">
+        <div class="img_blocks">
+            <img src="https://source.unsplash.com/random/150x150" alt="">
+            <img src="https://source.unsplash.com/random/150x150" alt="">
+            <img src="https://source.unsplash.com/random/150x150" alt="">
+        </div>
+    </div>
     
-    </head>
-    <body>
-       <div class="error_wrapper">
-           <div class="error_heading">
-               <h2>Yike! Who knows when that will be available?</h2>
-           </div>
-           <img src="./images/tbot.png">
-
-       </div>
-    </body>
+</body>
 </html>
